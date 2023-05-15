@@ -11,4 +11,12 @@ const getImage = async function () {
     console.log(images);
 };
 
-getImage();
+const selectRandomImage = function (image) {
+
+    const randomIndex = math.floor(Math.random() * images.length)
+    console.log(randomIndex);
+};
+
+getImage(selectRandomImage(images));
+
+
